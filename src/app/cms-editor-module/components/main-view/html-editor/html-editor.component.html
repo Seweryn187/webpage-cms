@@ -1,0 +1,28 @@
+<head>
+    <title>{{this.service.getPage().pageTitle}}</title>
+</head>
+
+<div class="title-editor-wrapper">
+    <h2>Title editor</h2>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <input matInput [(ngModel)]="this.service.getPage().pageTitle" type="email" [placeholder]="this.service.getPage().pageTitle" (onchange)="changePageTitle()">
+    </mat-form-field>
+</div>
+
+<div class="header-editor-wrapper">
+    <h2>Header editor</h2>
+    <quill-editor id="header-editor" [modules]="this.modules" (onEditorChanged)="changedEditor($event, 'header-editor')" (onEditorCreated)="createdEditor($event, 'header-editor')">
+    </quill-editor>
+</div>
+
+<div class="main-content-editor-wrapper">
+    <h2>Main content editor</h2>
+    <quill-editor id="main-content-editor" [modules]="this.modules" (onEditorChanged)="changedEditor($event, 'main-content-editor')" (onEditorCreated)="createdEditor($event, 'main-content-editor')">
+    </quill-editor>
+</div>
+
+<div class="footer-editor-wrapper">
+    <h2>Footer editor</h2>
+    <quill-editor id="footer-editor" [modules]="this.modules" (onEditorChanged)="changedEditor($event, 'footer-editor')" (onEditorCreated)="createdEditor($event, 'footer-editor')">
+    </quill-editor>
+</div>

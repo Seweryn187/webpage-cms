@@ -1,0 +1,14 @@
+<div class="toolbar">
+    <mat-toolbar>
+        <h5 class="home-link">CMS EDITOR</h5>
+        <div class="spacer"></div>
+        <a [routerLink]="['/viewer']">Viewer</a>
+        <div class="spacer"></div>
+        <a [routerLink]="['/html-editor']">Html editor</a>
+        <div class="spacer"></div>
+        <a [routerLink]="['/css-editor']">Css editor</a>
+    </mat-toolbar>
+</div>
+<div class="main">
+    <router-outlet></router-outlet>
+</div>

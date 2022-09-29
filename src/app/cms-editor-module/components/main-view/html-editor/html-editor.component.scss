@@ -1,0 +1,21 @@
+$editor-width: 90%;
+.title-editor-wrapper {
+    width: $editor-width;
+    margin: 3%;
+    max-height: 150px !important;
+}
+
+.header-editor-wrapper {
+    width: $editor-width;
+    margin: 3%;
+}
+
+.main-content-editor-wrapper {
+    width: $editor-width;
+    margin: 3%;
+}
+
+.footer-editor-wrapper {
+    width: $editor-width;
+    margin: 3%;
+}
